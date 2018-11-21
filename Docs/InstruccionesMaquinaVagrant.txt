@@ -1,0 +1,23 @@
+URL máquina: https://drive.google.com/open?id=16mm42DcrGKXpr9FZNhIAkT5XJarZN4Ju
+# mkdir bdhKC 
+Subir a este directorio el package.box que está en drive/Vagrant del drive de bigdataheroes
+Ejecutar:
+# vagrant package --base CentOS7
+# vagrant box add package.box --name CentOS7
+# vagrant init CentOS7
+# vagrant up
+
+Conexión por ssh a 127.0.0.1 puerto 2222
+
+Usuarios/contraseña: 	vagrant/vagrant
+						root/vagrant
+						hadoop/hadoop
+						
+Hadopp: con usuario hadoop (su - hadoop): 	start_dfs.sh
+											start_yarn.sh
+							
+											stop_yarn.sh
+											stop_dfs.sh
+							
+Spark: con usuario vagrant: ir a /opt/spark-2.3.2-bin-hadoop2.7/sbin y ejecutar start-all.sh
+																				stop-all.sh
